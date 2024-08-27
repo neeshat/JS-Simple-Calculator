@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator Design</title>
+</head>
+<body>
+    
+    <div class="calculator">
+        <input type="text" class="display" readonly>
+        <div class="btn-container">
+            <button class="btn" onclick="
+                    crntDisplay = '';
+                    document.querySelector('.display').value=crntDisplay;
+                ">C</button>
+            <button class="btn" onclick="
+                crntDisplay+='1';
+                document.querySelector('.display').value = crntDisplay;
+            ">1</button>
+            <button class="btn" onclick="
+            crntDisplay+='2';
+            document.querySelector('.display').value = crntDisplay;
+        ">2</button>
+            <button class="btn"onclick="
+            crntDisplay+='+';
+            document.querySelector('.display').value = crntDisplay;
+        ">+</button>
+            <button class="btn"onclick="
+            crntDisplay+='3';
+            document.querySelector('.display').value = crntDisplay;
+        ">3</button>
+            <button class="btn"onclick="
+            crntDisplay+='4';
+            document.querySelector('.display').value = crntDisplay;
+        ">4</button>
+            <button class="btn"onclick="
+            crntDisplay+='-';
+            document.querySelector('.display').value = crntDisplay;
+        ">-</button>
+            <button class="btn"onclick="
+            crntDisplay+='5';
+            document.querySelector('.display').value = crntDisplay;
+        ">5</button>
+            <button class="btn"onclick="
+            crntDisplay+='6';
+            document.querySelector('.display').value = crntDisplay;
+        ">6</button>
+            <button class="btn"onclick="
+            crntDisplay+='*';
+            document.querySelector('.display').value = crntDisplay;
+        ">*</button>
+            <button class="btn" onclick="
+            crntDisplay+='7';
+            document.querySelector('.display').value = crntDisplay;
+        ">7</button>
+            <button class="btn"onclick="
+            crntDisplay+='8';
+            document.querySelector('.display').value = crntDisplay;
+        ">8</button>
+            <button class="btn" onclick="
+            crntDisplay+='/';
+            document.querySelector('.display').value = crntDisplay;
+        ">/</button>
+            <button class="btn"onclick="
+                crntDisplay = eval(crntDisplay);
+                document.querySelector('.display').value = crntDisplay;
+        ">=</button>
+            <button class="btn"onclick="
+            crntDisplay+='9';
+            document.querySelector('.display').value = crntDisplay;
+        ">9</button>
+            <button class="btn"onclick="
+            crntDisplay+='0';
+            document.querySelector('.display').value = crntDisplay;
+        ">0</button>
+            <button class="btn"onclick="
+            crntDisplay+='.';
+            document.querySelector('.display').value = crntDisplay;
+        ">.</button>
+
+
+        </div>
+    </div>
+
+    <script>
+        let crntDisplay = '';
+    </script>
+
+
+</body>
+</html>
